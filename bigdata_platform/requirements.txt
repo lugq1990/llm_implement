@@ -1,0 +1,5 @@
+pyspark
+networkx
+pycryptodome
+findspark
+pymsyql

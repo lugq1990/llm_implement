@@ -1,5 +1,6 @@
 import os
 import json
+import peft
 
 
 def load_keys():

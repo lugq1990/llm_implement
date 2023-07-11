@@ -1,0 +1,108 @@
+{
+	"tab": {
+		"id": "1688621678511",
+		"changed": true,
+		"linker": "jk498y7p",
+		"name": "test",
+		"type": "workflow",
+		"index": 0
+	},
+	"id": "test",
+	"type": "workflow",
+	"components": {
+		"1": [
+			{
+				"component": "file_source",
+				"state": {
+					"text": "",
+					"color": ""
+				},
+				"x": 94,
+				"y": 120,
+				"tab": "1688621678511",
+				"connections": {
+					"0": [
+						{
+							"index": "0",
+							"id": "1688623653352"
+						}
+					]
+				},
+				"id": "1688621680859",
+				"isnew": true,
+				"disabledio": {
+					"input": [],
+					"output": []
+				},
+				"name": "Hive Source",
+				"phase": 1,
+				"options": {
+					"sourceCSI": "146184",
+					"ID": "1688621680859",
+					"database": "data",
+					"tableName": "test"
+				}
+			},
+			{
+				"component": "file_sink",
+				"state": {
+					"text": "",
+					"color": ""
+				},
+				"x": 564,
+				"y": 142,
+				"tab": "1688621678511",
+				"connections": {},
+				"id": "1688623054188",
+				"isnew": true,
+				"disabledio": {
+					"input": [],
+					"output": []
+				},
+				"name": "Hive Sink",
+				"phase": 1,
+				"options": {
+					"destinationCSI": "146184",
+					"ID": "1688623054188",
+					"database": "data",
+					"tableName": "test",
+					"format": "hive"
+				}
+			},
+			{
+				"component": "select",
+				"state": {
+					"text": "",
+					"color": ""
+				},
+				"x": 366,
+				"y": 114,
+				"tab": "1688621678511",
+				"connections": {
+					"0": [
+						{
+							"index": "0",
+							"id": "1688623054188"
+						}
+					]
+				},
+				"id": "1688623653352",
+				"isnew": true,
+				"disabledio": {
+					"input": [],
+					"output": []
+				},
+				"name": "Select",
+				"phase": 1,
+				"options": {
+					"ID": "1688623653352",
+					"selectExpression": [
+						"a"
+					]
+				}
+			}
+		]
+	},
+	"created": "2023-07-06T06:07:56.785Z",
+	"user": "SYSTEM"
+}
