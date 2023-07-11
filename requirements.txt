@@ -1,2 +1,8 @@
-pymysql=1.0.3
-pycryptodome
+transformers
+langchain
+redis
+peft
+evaluate
+datasets
+accelerate
+mysql-connector-python

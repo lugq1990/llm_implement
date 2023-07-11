@@ -4,12 +4,6 @@
 2. `chat-based model` based on langchain and chatglm based on transformer with fine-tuning for bankers
 
 
-### `big data platform`
-
-Goodness:
-- re-usable platform for developer to efficient etl, no need to write spark code
-- support webpage based ELT workflow, with visiable data flow for PM and BA
-- 
 
 
 ### `chat-based model`
@@ -18,6 +12,26 @@ Goodness:
 - personalized chat and friendly output based on each user
 - give user suggestion for finance product? --> should give llm some structured data
 - better and satisfied feelings for users
+
+
+
+### LLM based project implement
+
+For users: 
+1. Developers that could data data from database without writing SQL
+2. Internal legal users that need to some query for contracts, based on ES and LLM
+
+
+#### freeSQL implement
+
+Support user interact with database without writing `SQL` language that could get data result, also support data-plot just like python's ``
+
+
+Solution:
+1. `pandasai` that support query without sql
+2. `langchain` and `transformers` that do document retrieve based on user query.
+
+
 
 #### Process steps:
 

@@ -20,7 +20,24 @@ Backend engine for now is `Spark`, but will support `Flink` either that support 
 1. Configurations are stored in `MYSQL`.
 2. A monitor tool that get changes records bin log files in `MYSQL`, write changes records into `kafka`
 3. Dump records into `HDFS` or other durable file systems, will do checking configurations is supported and right for later usecase, meanwhile will dump records into `HBase` for future bebug. Configurations are stored as a `JSON` format, could re-load JSON file into data structure as needed.  `#todo how to solve dynamic configurations in code? `
-4. 
+
+
+
+### LLM based project implement
+
+Use LLM ability to implement personal recommendation for each user.
+
+For users: 
+1. Developers that could data data from database without writing SQL
+2. Internal legal users that need to some query for contracts, based on ES and LLM
+
+
+Solution:
+1. `pandasai` that support query without sql
+2. `langchain` and `transformers` that do document retrieve based on user query.
+
+
+
 
 ### known issues
 
