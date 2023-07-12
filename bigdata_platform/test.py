@@ -1,10 +1,8 @@
-import json
-import pathlib
-import os
+from pyspark.sql import SparkSession
 
-file = os.path.join(pathlib.Path(__file__).parent.resolve(), 'sample_flow.json')
 
-with open(file, 'r') as f:
-    data = f.read()
-    
-print(json.loads(data))
+if __name__ == "__main__":
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.createDataFrame([(1, "John Doe", 21)], ("id", "name", "age"))
+
+    df.show()

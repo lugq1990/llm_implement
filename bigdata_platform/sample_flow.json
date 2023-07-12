@@ -103,6 +103,21 @@
 			}
 		]
 	},
+	"airflow_config":
+		{
+			"dag_id": "bigdata_platform",
+			"description": "based on bigdata_platform to create dynamic airflow dags",
+			"default_args":{
+				"start_date": "20230101",
+				"schedule": "hour",
+				"email": ["gqianglu@outlook.com"],
+				"retries": 1,
+				"depends_on_past": "false",
+				"email_on_failure": "false",
+				"email_on_retry": "false"
+			}
+		},
 	"created": "2023-07-06T06:07:56.785Z",
 	"user": "SYSTEM"
+	
 }

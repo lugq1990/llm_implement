@@ -1,0 +1,19 @@
+dag_id: "bigdata_platform"
+description: "based on bigdata_platform to create dynamic airflow dags"
+start_date: '20230101'
+schedule: "hour"
+default_args:
+  "depends_on_past": False
+  "email": ["gqianglu@outlook.com"]
+  "email_on_failure": False
+  "email_on_retry": False
+  "retries": 1
+  "retry_delay": timedelta(minutes=5)
+  "queue": "bash_queue"
+  "pool": "backfill"
+  "priority_weight": 10
+  "end_date": '20230101'
+  "wait_for_downstream": False
+  "sla": timedelta(hours=2)
+  "execution_timeout": timedelta(seconds=300)
+  "trigger_rule": "all_success"
