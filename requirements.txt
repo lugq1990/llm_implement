@@ -6,8 +6,6 @@ evaluate
 datasets
 accelerate
 mysql-connector-python
-pyspark
-networkx
-pycryptodome
-findspark
-pymsyql
+spacy
+PyPDF2
+chramadb

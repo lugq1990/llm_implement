@@ -12,7 +12,7 @@ from util import load_keys
 from prompts import SUMMARY_PROMPT
 
 
-
+# based on OpenAI models
 keys = load_keys()
 
 os.environ["OPENAI_API_KEY"] = keys['openai_key']
