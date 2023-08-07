@@ -67,8 +67,6 @@ Solution:
 - send prediction into frontend
 
 
-
-
 ### LLM based project implement
 
 Use LLM ability to implement personal recommendation for each user.
@@ -98,4 +96,6 @@ Build up with docker commands.
 #### Docker with redis-server
 ``sh
 docker run --name rds -dp 6379:6379 redis/redis-stack-server 
+
+docker start rds
 ``

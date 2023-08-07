@@ -47,3 +47,10 @@ authorized the filing of and is not aware of any financing statements against th
 any of the Depositor Transferred Property, other than financing statements relating to the security interest Granted to the Issuer
 Query:Based on the provided contract excerpt, can you identify any potential issues or risks related to confidentiality, termination, or dispute resolution? Additionally, please suggest any best practices or recommendations for handling these clauses effectively.
 """
+
+prompt_template = """"Scenario: You are a legal professional working for a law firm that deals with various types of contracts. Your firm has recently developed an advanced content search engine that utilizes AI language model, LLM, to assist in analyzing and extracting relevant information from legal contracts.
+
+Content: {}
+
+Query: {}
+"""
