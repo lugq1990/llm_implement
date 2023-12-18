@@ -18,17 +18,6 @@ For users:
 2. Internal legal users that need to some query for contracts, based on ES and LLM
 
 
-#### freeSQL implement
-
-Support user interact with database without writing `SQL` language that could get data result, also support data-plot just like python's `matplotlib`
-
-
-Solution:
-1. `pandasai` that support query without sql
-2. `langchain` and `transformers` that do document retrieve based on user query.
-
-
-
 #### Process steps:
 
 1. each user login will get user information, then `extract users' information from database`
